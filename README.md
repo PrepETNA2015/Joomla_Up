@@ -9,6 +9,7 @@ DEV By
 -WIESER Frank -- wieser_f@etna-alternance.net
 
 -MÉNIGAULT Louis  -- meniga_l@etna-alternance.net
+
 =========
 
 Code Camp CMS (one week)
