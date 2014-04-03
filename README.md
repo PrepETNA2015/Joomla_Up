@@ -10,6 +10,8 @@ DEV By
 
 -MÉNIGAULT Louis  -- meniga_l@etna-alternance.net
 
+-CASAGRANDE Adrien -- casagr_a@etna-alternance.net 
+
 =========
 
 Code Camp CMS (one week)
