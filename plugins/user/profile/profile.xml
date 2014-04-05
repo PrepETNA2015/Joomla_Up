@@ -38,11 +38,7 @@
 					<option value="1">JOPTION_OPTIONAL</option>
 					<option value="0">JDISABLED</option>	
 				</field>
-				
-				<field  type="buttonadd" class="btn" onclick="add_fct('adress')"  />
-				<field  type="buttondel" class="btn" onclick="del_fct('adress')"/>
-				
-				
+								
 				<field name="register-require_city" type="list"
 
 					description="PLG_USER_PROFILE_FIELD_CITY_DESC"
@@ -52,10 +48,7 @@
 					<option value="1">JOPTION_OPTIONAL</option>
 					<option value="0">JDISABLED</option>
 				</field>
-
-				<field  type="buttonadd" class="btn" onclick="add_fct('city')"/>
-				<field  type="buttondel" class="btn" onclick="del_fct('city')"/>
-				
+	
 				<field name="register-require_region" type="list"
 
 					description="PLG_USER_PROFILE_FIELD_REGION_DESC"
@@ -65,10 +58,8 @@
 					<option value="1">JOPTION_OPTIONAL</option>
 					<option value="0">JDISABLED</option>
 				</field>
-				
-				<field  type="buttonadd" class="btn" onclick="add_fct('region')"/>
-				<field  type="buttondel" class="btn" onclick="del_fct(region)"/>
-
+				<field  type="buttonadd" class="btn btn-success" onclick="add_fct('adress')"/>
+				<field  type="buttondel" class="btn btn-danger" onclick="del_fct('adress')" />	
 				<field name="register-require_country" type="list"
 
 					description="PLG_USER_PROFILE_FIELD_COUNTRY_DESC"

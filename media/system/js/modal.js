@@ -26,14 +26,23 @@ this.fireEvent("onAjax",[a,this.asset]);this.asset=null}.bind(this),onFailure:th
 
 function add_fct(field)
 {
-alert(field);
 var currentUrl = location.href;
+document.location.href="script.php?param="+field;
 location.href = currentUrl;
 }
 function del_fct(field)
 {
-alert(field);
 var currentUrl = location.href;
+document.location.href="script.php?param="+field;
 location.href = currentUrl;
 }
+
+window.onload = function() {
+	var btnadd = document.getElementById("jform_params___field1");
+	var btndel = document.getElementById("jform_params___field2");
+	var parentadd = btnadd.parentNode.parentNode;
+	var parentdel = btndel.parentNode.parentNode;
+	parentadd.className = "btnadd";
+	parentdel.className = "btndel";  
+};
 

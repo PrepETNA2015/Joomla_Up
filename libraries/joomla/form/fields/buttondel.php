@@ -32,7 +32,7 @@ protected function getInput()
 		// Initialize some field attributes
 		
 		$class = !empty($this->class) ? ' class="' . $this->class . '"' : '';
-
+		$style = "style='height:30px;width:40px;'";/*margin-left:300px;margin-top:-120px;*/
 
 		// Initialize JavaScript field attributes.
 		$onclick = $this->onclick ? ' onclick="' . $this->onclick . '"' : '';
@@ -41,7 +41,7 @@ protected function getInput()
 		JHtml::_('jquery.framework');
 		JHtml::_('script', 'system/html5fallback.js', false, true);
 
-		return '<input type="button" name="' . $this->name . '"' . $class . ' id="' . $this->id . '" value="-"' . $onclick  . 'style="height:30px;width:40px;" />';
+		return '<input type="button" name="' . $this->name . '"' . $class . ' id="' . $this->id . '" value="-"' . $onclick  . $style.'" />';
 	}
 	
 }
