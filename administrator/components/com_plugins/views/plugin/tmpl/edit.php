@@ -24,7 +24,7 @@ $this->fieldsets = $this->form->getFieldsets('params');
 	}
 </script>
 
-<form action="<?php echo JRoute::_('index.php?option=com_plugins&layout=edit&extension_id=' . (int) $this->item->extension_id); ?>" method="post" name="adminForm" id="style-form" class="form-validate">
+<form action="<?php echo JRoute::_('index.php?option=com_plugins&layout=edit&extension_id=' . (int) $this->item->extension_id); ?>" method="post" name="adminForm" id="style-form" class="form-validate">	
 	<div class="form-horizontal">
 
 		<?php echo JHtml::_('bootstrap.startTabSet', 'myTab', array('active' => 'general')); ?>
@@ -32,7 +32,7 @@ $this->fieldsets = $this->form->getFieldsets('params');
 		<?php echo JHtml::_('bootstrap.addTab', 'myTab', 'general', JText::_('COM_PLUGINS_PLUGIN', true)); ?>
 
 		<div class="row-fluid">
-			<div class="span9">
+			<div class="span9">			
 				<?php if ($this->item->xml) : ?>
 					<?php if ($this->item->xml->description) : ?>
 						<h3>
@@ -77,19 +77,20 @@ $this->fieldsets = $this->form->getFieldsets('params');
 									<a href="#" onclick="jQuery('.nav-tabs a[href=#description]').tab('show');">
 										<?php echo JText::_('JGLOBAL_SHOW_FULL_DESCRIPTION'); ?>
 									</a>
-								</p>
+								</p>								
 							<?php endif; ?>
-						</div>
+						</div>						
 					<?php endif; ?>
 				<?php else : ?>
 					<div class="alert alert-error"><?php echo JText::_('COM_PLUGINS_XML_ERR'); ?></div>
 				<?php endif; ?>
-
+				<h1>start of fields</h1>
 				<?php
 				$this->fieldset = 'basic';
 				$html = JLayoutHelper::render('joomla.edit.fieldset', $this);
 				echo $html ? '<hr />' . $html : '';
 				?>
+				<h1>end of fields</h1>
 			</div>
 			<div class="span3">
 				<?php echo JLayoutHelper::render('joomla.edit.global', $this); ?>

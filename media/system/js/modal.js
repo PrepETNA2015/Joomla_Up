@@ -23,3 +23,17 @@ SqueezeBox.handlers.extend({image:function(a){var b,c=new Image;this.asset=null;
 b)}else this.onError.delay(10,this)}.bind(this);c.src=a;if(c&&c.onload&&c.complete)c.onload();return this.asset?[this.asset,b]:null},clone:function(a){return a?a.clone():this.onError()},adopt:function(a){return a?a:this.onError()},ajax:function(a){var b=this.options.ajaxOptions||{};this.asset=(new Request.HTML(Object.merge({method:"get",evalScripts:!1},this.options.ajaxOptions))).addEvents({onSuccess:function(a){this.applyContent(a);null!==b.evalScripts&&!b.evalScripts&&Browser.exec(this.asset.response.javascript);
 this.fireEvent("onAjax",[a,this.asset]);this.asset=null}.bind(this),onFailure:this.onError.bind(this)});this.asset.send.delay(10,this.asset,[{url:a}])},iframe:function(a){this.asset=new Element("iframe",Object.merge({src:a,frameBorder:0,width:this.options.size.x,height:this.options.size.y},this.options.iframeOptions));return this.options.iframePreload?(this.asset.addEvent("load",function(){this.applyContent(this.asset.setStyle("display",""))}.bind(this)),this.asset.setStyle("display","none").inject(this.content),
 !1):this.asset},string:function(a){return a}});SqueezeBox.handlers.url=SqueezeBox.handlers.ajax;SqueezeBox.parsers.url=SqueezeBox.parsers.ajax;SqueezeBox.parsers.adopt=SqueezeBox.parsers.clone;
+
+function add_fct(field)
+{
+alert(field);
+var currentUrl = location.href;
+location.href = currentUrl;
+}
+function del_fct(field)
+{
+alert(field);
+var currentUrl = location.href;
+location.href = currentUrl;
+}
+

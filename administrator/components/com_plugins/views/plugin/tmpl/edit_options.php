@@ -8,7 +8,6 @@
  */
 
 defined('_JEXEC') or die;
-
 foreach ($this->fieldsets as $name => $fieldset)
 {
 	if (!isset($fieldset->repeat) || isset($fieldset->repeat) && $fieldset->repeat == false)

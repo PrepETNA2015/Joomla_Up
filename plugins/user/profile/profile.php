@@ -410,3 +410,5 @@ class PlgUserProfile extends JPlugin
 		return true;
 	}
 }
+?>
+

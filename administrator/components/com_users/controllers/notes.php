@@ -35,8 +35,4 @@ class UsersControllerNotes extends JControllerAdmin
 	 *
 	 * @since   2.5
 	 */
-	public function getModel($name = 'Note', $prefix = 'UsersModel', $config = array('ignore_request' => true))
-	{
-		return parent::getModel($name, $prefix, $config);
-	}
 }

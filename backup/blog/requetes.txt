@@ -1,0 +1,15 @@
+$add_post = $bbd->exec("INSERT INTO post (name_post, id_categ, post, img) VALUES ('".$donnee['name_post']."','".."','".."','".."')");
+/*ajoute un post*/
+
+$add_admin = $bdd->exec("INSERT INTO admin (pseudo, passwd) VALUES ('".."', '".."')");
+/*ajoute un admin*/
+
+$add_categ = $bdd->exec("INSERT INTO admin (name_categ) VALUES ('".."')");
+/*ajoute une categorie*/
+
+sup_com = $bdd->exec("DELETE FROM commentaire WHERE id_com = '".."'");
+/*supprimer un commentaire*/
+
+sup_com = $bdd->exec("DELETE FROM commentaire WHERE name_post = '".."'");
+sup_post = $bdd->exec("DELETE FROM post WHERE name_post= '".."'");
+/*supprimer un post*/

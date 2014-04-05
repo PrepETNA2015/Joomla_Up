@@ -6171,7 +6171,9 @@ div.modal.fade {
 div.modal.fade.in {
   top: 10%;
 }
-
+.inline{
+display: inline;
+}
 // < Joomla JUI
 
 /* Joomla JUI NOTE: Original .modal definition has to be commented */

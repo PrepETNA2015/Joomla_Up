@@ -46,6 +46,8 @@ class UsersHelper
 
 		if ($canDo->get('core.admin'))
 		{
+		
+		
 			JHtmlSidebar::addEntry(
 				JText::_('COM_USERS_SUBMENU_GROUPS'),
 				'index.php?option=com_users&view=groups',
